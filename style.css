@@ -1,0 +1,227 @@
+body{
+  background-color: white;
+  display: block;
+  height: 100vh;
+}
+
+span, h1, h2, h3, p, li, button{
+  font-family: 'Original Surfer', cursive;
+}
+
+header{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-family: 'Original Surfer', cursive;
+  border-bottom: 0.5px  solid lightgrey;
+}
+
+nav{
+  text-align: right;
+  flex-grow: 1;
+}
+ 
+nav span{
+    display: inline-block;
+    padding: 20px 30px;
+}
+
+main, .contact-sheet{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+
+
+.image{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+img{
+  width: 60%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.introduction, .email-address {
+  width: 50%;
+  text-align: center;
+}
+
+.skills {
+  margin-top: 80px;
+  display:flex;
+  width: 100%;
+}
+
+.icon{
+  display: flex;
+  width: 15%;
+  justify-content: center;
+
+}
+
+.icon img{
+  width: 50%;
+  aspect-ratio: 1/1;
+  padding: 20px 30px;
+}
+
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover{
+  cursor: pointer;
+  text-decoration: none;
+  color:hotpink;
+}
+
+a:active{
+  text-decoration: none;
+  color: red;
+}
+
+
+.contact-sheet{
+  display: flex;
+  width: 100%;
+  margin-top: 150px;
+}
+
+.email-address span{
+  color: #f542da;
+}
+
+.jobs{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  align-content: center;
+  justify-content: center;
+}
+
+#working-content{
+  height: 80%;
+  
+}
+.job-bar, .intro-bar{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border: 0.5px  solid lightgrey;
+  align-items: center;
+  margin-top: 50px;
+}
+
+button{
+  height: 50px;
+  border-radius: 15%;
+  color: black;
+  background-color: white;
+  border: 1px solid #e7e7e7;
+  margin-right: 10px;
+}
+
+button:hover{
+  background-color: #e7e7e7;
+  cursor: pointer;
+}
+
+li, #detail-of-introduction p, #detail-of-education p{
+  color: grey;
+}
+
+#introduction-content{
+  height: 80%;
+
+}
+
+
+
+.detail-of-myself{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  align-content: center;
+  justify-content: center;
+}
+
+.job-bar p, .intro-bar p{
+  font-size: 1.5em;
+}
+
+
+
+@media screen and (max-width: 600px){
+
+  body{
+    height: auto;
+    overflow-x:hidden;
+  }
+
+
+  header nav{
+    display: flex;
+    flex-direction: column;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .image img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+
+  .icon{
+    width: 30%;
+    aspect-ratio: 1/1;
+    border: 1px solid black;
+  }
+
+  .icon img{
+    width: 60%;
+    aspect-ratio: 1/1;
+  }
+  
+
+  .push{
+    margin-bottom: 100px;
+  }
+
+  .skills{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .contact-sheet{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+
+  .email-address span{
+    font-size: 1rem;
+  }
+  
+  .intro-bar, .job-bar{
+    flex-direction: column;
+  }
+}
